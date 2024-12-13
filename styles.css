@@ -1,0 +1,34 @@
+header {
+    background-color: cornflowerblue;
+    color: white;
+    height: 200px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+h3 {
+    text-align: center;
+    background-color: red;
+    color: darkblue;
+    font-family: Times New Roman;
+}
+h4 {
+    text-align: center;
+    background-color: brown;
+    color: aqua;
+    font-family: Cambria;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+}
+li {
+    margin: 0 10px;
+}
