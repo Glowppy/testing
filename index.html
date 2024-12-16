@@ -72,12 +72,17 @@
                 <input type="submit" value="Invia">
             </form>
                 <br>
-                <script>
-                    function myFunction() {
-                      document.getElementById("button").innerHTML = "Azione effettuata";
-                    }
-                </script>
-                    <button type="button" onclick="myFunction()">Cliccare</button>
         </footer>
+        <button id="miopulsante">Pulsante con JavaScript</button>
+        <script>
+            // Funzione che verrà eseguita quando il pulsante sarà premuto
+            function mostrailmessaggio() {
+                alert("Hai premuto il messaggio")
+            }
+            // Selezionare il pulsante col suo id "miopulsante"
+            var pulsante = document.getElementById("miopulsante");
+            // Aggiungere l'evento di click che esegue la funzione "mostramessaggio"
+            pulsante.addEventListener("clic", mostrailmessaggio);
+        </script>
     </body>
 </html>
