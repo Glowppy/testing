@@ -23,6 +23,7 @@ h4 {
     background-color: brown;
     color: aqua;
     font-family: Cambria;
+    margin-right: 20px;
 }
 ul {
     display: flex;
