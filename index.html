@@ -84,5 +84,14 @@
             // Aggiungere l'evento di click che esegue la funzione "mostramessaggio"
             pulsante.addEventListener("click", mostrailmessaggio);
         </script>
+        <script>
+        function cambiaColoreSfondo() {
+            const form = document.getElementById("myForm");
+            form.style.backgroundColor = "lightblue"; // Cambia il colore a lightblue
+        }
+        
+        // Aggiungi l'evento click al bottone
+        document.getElementById("changeColorButton").addEventListener("click", cambiaColoreSfondo);
+        </script>
     </body>
 </html>
