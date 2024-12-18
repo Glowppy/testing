@@ -84,7 +84,7 @@
             // Aggiungere l'evento di click che esegue la funzione "mostramessaggio"
             pulsante.addEventListener("click", mostrailmessaggio);
         </script>
-    <form id="multiplicationForm"> 
+    <form id="multiplicationForm"><h3>Form per effettuare operazioni matematiche</h3> 
         <label for="number1">Numero 1:</label> 
         <input type="number" id="number1" name="number1" step="any" required><br><br> 
         <label for="number2">Numero 2:</label> 
@@ -101,7 +101,7 @@
         const number2 = parseFloat(document.getElementById('number2').value); 
         const number3 = parseFloat(document.getElementById('number3').value); 
         // // Calcola il risultato della moltiplicazione 
-        const result = number1 * number2 * number3; 
+        const result = number1 + number2 + number3; 
         // // Mostra il risultato 
         document.getElementById('result').textContent = 'Il risultato della moltiplicazione è: ' + result;
         }); 
