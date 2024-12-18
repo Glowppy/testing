@@ -73,7 +73,7 @@
             </form>
                 <br>
         </footer>
-        <button id="miopulsante">Pulsante con JavaScript</button>
+        <button id="miopulsante">Pulsante con JavaScript</button><br><br>
         <script>
             // Funzione che verrà eseguita quando il pulsante sarà premuto
             function mostrailmessaggio() {
@@ -84,5 +84,27 @@
             // Aggiungere l'evento di click che esegue la funzione "mostramessaggio"
             pulsante.addEventListener("click", mostrailmessaggio);
         </script>
-    </body>
+    <form id="multiplicationForm"> 
+        <label for="number1">Numero 1:</label> 
+        <input type="number" id="number1" name="number1" step="any" required><br><br> 
+        <label for="number2">Numero 2:</label> 
+        <input type="number" id="number2" name="number2" step="any" required><br><br> 
+        <label for="number3">Numero 3:</label> 
+        <input type="number" id="number3" name="number3" step="any" required><br><br> 
+        <button type="submit">Calcola</button> 
+    </form> 
+    <p id="result"></p> 
+    <script> document.getElementById('multiplicationForm').addEventListener('submit', function(event) { 
+        event.preventDefault(); // Previene l'invio del form 
+        // // Ottiene i valori dei campi di input 
+        const number1 = parseFloat(document.getElementById('number1').value); 
+        const number2 = parseFloat(document.getElementById('number2').value); 
+        const number3 = parseFloat(document.getElementById('number3').value); 
+        // // Calcola il risultato della moltiplicazione 
+        const result = number1 * number2 * number3; 
+        // // Mostra il risultato 
+        document.getElementById('result').textContent = 'Il risultato della moltiplicazione è: ' + result;
+        }); 
+    </script>
+</body>
 </html>
