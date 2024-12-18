@@ -84,7 +84,7 @@
             // Aggiungere l'evento di click che esegue la funzione "mostramessaggio"
             pulsante.addEventListener("click", mostrailmessaggio);
         </script>
-    <form id="multiplicationForm"><h3>Form per effettuare operazioni matematiche</h3> 
+    <form id="multiplicationForm"> 
         <label for="number1">Numero 1:</label> 
         <input type="number" id="number1" name="number1" step="any" required><br><br> 
         <label for="number2">Numero 2:</label> 
@@ -93,7 +93,8 @@
         <input type="number" id="number3" name="number3" step="any" required><br><br> 
         <button type="submit">Calcola</button> 
     </form> 
-    <p id="result"></p> 
+    <p id="result"></p>
+    <p id="rangeCheck"></p>
     <script> document.getElementById('multiplicationForm').addEventListener('submit', function(event) { 
         event.preventDefault(); // Previene l'invio del form 
         // // Ottiene i valori dei campi di input 
@@ -101,9 +102,13 @@
         const number2 = parseFloat(document.getElementById('number2').value); 
         const number3 = parseFloat(document.getElementById('number3').value); 
         // // Calcola il risultato della moltiplicazione 
-        const result = number1 + number2 + number3; 
+        const result = number1 * number2 * number3; 
         // // Mostra il risultato 
         document.getElementById('result').textContent = 'Il risultato della moltiplicazione è: ' + result;
+        if (result >= 10 && result <= 20) { 
+            document.getElementById('rangeCheck').textContent = 'Il risultato è nel range tra 10 e 20.'; 
+        } else { 
+            document.getElementById('rangeCheck').textContent = 'Il risultato non è nel range tra 10 e 20.'; }
         }); 
     </script>
 </body>
