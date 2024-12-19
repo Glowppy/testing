@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confronto Lunghezza Stringhe</title>
+    <script>
+        function confrontaLunghezza() {
+            //Ottieni i valori delle stringhe inserite
+            var stringa1 = document.getElementById("stringa1").value;
+            var stringa2 = document.getElementById("stringa2").value;
+
+            //Calcola la lunghezza delle stringhe
+            var lunghezza1 = stringa1.lenght;
+            var lunghezza2 = stringa2.lenght;
+
+            //Confronta le lunghezze e mostra il risultato
+            var risultato = ""; //Questo significa che la variabile dovrà essere riempita di un valore successivamente
+            if (lunghezza1 > lunghezza2) {
+                risultato = "La prima stringa è più lunga della seconda.";
+            }
+        }
+
+        
+    </script>
